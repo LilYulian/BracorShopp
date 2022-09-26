@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="prueba1.Views.Contenido1"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        
+        <ScrollView>
+            
+        <Grid BackgroundColor="#bd0003">
+
+                <!--<StackLayout>
+
+                    <Frame CornerRadius="15" BackgroundColor="White">
+                     <Label Text="Inicio de sesion" TextColor="Black" FontSize="20" FontAttributes="Bold"  HorizontalOptions="Center"/>
+                    </Frame>
+
+                </StackLayout>-->
+                <Frame VerticalOptions="FillAndExpand" 
+                       Margin="20,20,20,20" 
+                       CornerRadius="20" 
+                       HasShadow="False">
+        <StackLayout >
+
+
+                        <StackLayout.Resources>
+                            <ResourceDictionary>
+
+                                <Style x:Key="entryStyle" TargetType="Entry">
+                                    <Setter Property="BackgroundColor" Value="AliceBlue"/>
+                                    <Setter Property="Placeholder" Value="Ingrese la informacion"/>
+                                    <Setter Property="FontSize" Value="15"/>
+                                </Style>
+                            </ResourceDictionary>
+                        </StackLayout.Resources>
+            
+                        <Image Source="Bracorcho.png" 
+                           VerticalOptions="Start" 
+                           Margin="20,0,20,20"/>
+                    <!--<Label Text="Iniciar Sesion" TextColor="Red" HorizontalOptions="Center" FontAttributes="Bold" FontSize="40"/>-->
+                    <Grid>
+                    <Grid.ColumnSpacing >10</Grid.ColumnSpacing>
+                    <Grid.RowSpacing>10</Grid.RowSpacing>
+
+                    <Grid.ColumnDefinitions>
+
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+
+                    </Grid.RowDefinitions>
+
+                    </Grid>
+            
+            
+
+                    <Label Text="Nombre:" Grid.Column="0" Grid.Row="0" 
+                           TextColor="Black" 
+                           FontSize="25" 
+                           FontAttributes="Bold" 
+                           HorizontalOptions="CenterAndExpand" 
+                           Margin="0,0,0,10" />
+                        <Frame CornerRadius="15" >
+                            <!--<Entry BackgroundColor="AliceBlue" Grid.Column="1" Grid.Row="0" 
+                                   TextColor="Black" 
+                                   Placeholder="Ingrese su Nombre" 
+                                   PlaceholderColor="#a7a7a7"/>-->
+
+                            <Entry   Grid.Column="1" Style="{StaticResource entryStyle}"/>
+                        </Frame>
+                        <BoxView VerticalOptions="Center" 
+                                 HorizontalOptions="FillAndExpand" 
+                                 BackgroundColor="#bd0003" 
+                                 HeightRequest="5"/>
+
+                        
+                    <Label Text="Apellido:" Grid.Column="0" Grid.Row="1" 
+                           TextColor="Black" 
+                           FontSize="25" 
+                           FontAttributes="Bold" 
+                           HorizontalOptions="CenterAndExpand" 
+                           Margin="0,0,0,10"/>
+                        <Frame CornerRadius="15">
+                            <!--<Entry BackgroundColor="AliceBlue" Grid.Column="1" Grid.Row="1" 
+                                   TextColor="Black" 
+                                   Placeholder="Ingrese su Apellido" 
+                                   PlaceholderColor="#a7a7a7"/>-->
+                            <Entry   Grid.Column="1" Style="{StaticResource entryStyle}"/>
+                            
+                        </Frame>
+                        <BoxView VerticalOptions="Center" 
+                                 HorizontalOptions="FillAndExpand" 
+                                 BackgroundColor="#bd0003" 
+                                 HeightRequest="5"/> 
+                                 
+
+                    <Label Text="Numero de telefono:" Grid.Column="0" Grid.Row="2" 
+                           TextColor="Black" 
+                           FontSize="25" 
+                           FontAttributes="Bold" 
+                           HorizontalOptions="CenterAndExpand" 
+                           Margin="0,0,0,10"/>
+                        <Frame CornerRadius="15">
+                            <!--<Entry Keyboard="Telephone" 
+                                   BackgroundColor="AliceBlue" 
+                                   Grid.Column="1" Grid.Row="2" 
+                                   TextColor="Black" 
+                                   Placeholder="Ingrese su Numero de telefono" 
+                                   PlaceholderColor="#a7a7a7"/>-->
+                            <Entry   Grid.Column="1" Style="{StaticResource entryStyle}"/>
+                        </Frame>
+                        <BoxView VerticalOptions="Center" 
+                                 HorizontalOptions="FillAndExpand" 
+                                 BackgroundColor="#bd0003" 
+                                 HeightRequest="5" 
+                                 Margin="0,0,0,0"/>
+
+
+
+
+                        
+                            <Label Text="Ingrese el genero:" Grid.Column="0" Grid.Row="3" 
+                                   TextColor="Black"
+                                   FontSize="25" 
+                                   FontAttributes="Bold" 
+                                   HorizontalOptions="CenterAndExpand" 
+                                   Margin="0,0,0,10"/>
+                            <RadioButton Value="Hombre" TextColor="Black" >
+                                <RadioButton.Content>
+                                    <Image Source="icono_macho.png" />
+
+                                </RadioButton.Content>
+                            </RadioButton>
+                            <RadioButton Value="Mujer" TextColor="Black"  >
+                                <RadioButton.Content>
+                                    <Image Source="icono_hembra.png"  />
+                                </RadioButton.Content>
+                            </RadioButton>
+                            <RadioButton Value="No binario" TextColor="Black"  >
+                                <RadioButton.Content>
+                                    <Image Source="icono_binario.png"  />
+                                </RadioButton.Content>
+                            </RadioButton>
+                            <BoxView VerticalOptions="Center" 
+                                     HorizontalOptions="FillAndExpand" 
+                                     BackgroundColor="#bd0003" 
+                                     HeightRequest="5" />
+
+                        
+                        
+                         <Label Text="Fecha de nacimiento" Grid.Column="0" Grid.Row="4" 
+                                TextColor="Black" 
+                                FontSize="25" 
+                                FontAttributes="Bold" 
+                                HorizontalOptions="CenterAndExpand" 
+                                Margin="0,0,0,10"/>
+                            <Frame CornerRadius="15">
+                                <DatePicker Grid.Column="1" Grid.Row="4" 
+                                            TextColor="Black" 
+                                            Background="aliceblue" />
+                            </Frame>
+                            <BoxView VerticalOptions="Center" 
+                                     HorizontalOptions="FillAndExpand" 
+                                     BackgroundColor="#bd0003" 
+                                     HeightRequest="5" />
+
+                        <StackLayout Padding="10">
+
+                            <Button Text=" Guardar " 
+                                    TextTransform="None" 
+                                    BackgroundColor="Black" 
+                                    TextColor="AliceBlue" 
+                                    CornerRadius="10" 
+                                    FontAttributes="Bold" 
+                                    FontSize="Large"
+                                    x:Name="BTnGuardado"
+                                    />
+
+
+                        </StackLayout>
+
+                        <StackLayout Padding="10">
+
+                            <Button Text="Volver al inicio" 
+                                    TextTransform="None" 
+                                    BackgroundColor="Black" 
+                                    TextColor="AliceBlue" 
+                                    CornerRadius="10" 
+                                    FontAttributes="Bold" 
+                                    FontSize="Large"
+                                    x:Name="btnVolverInicio"
+                                    Clicked="btnVolverInicio_Clicked"/>
+
+                        </StackLayout>
+
+                    </StackLayout>
+            </Frame>
+        </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

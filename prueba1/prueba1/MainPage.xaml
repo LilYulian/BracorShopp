@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="prueba1.MainPage">
+    <ScrollView>
+        <!--<StackLayout Padding="10" BackgroundColor="#bd0003" >
+            <Frame CornerRadius="10" BackgroundColor="White"> 
+            <Label Text=" Bienvenidos " TextColor="Black" FontSize="40" FontAttributes="Bold"  HorizontalOptions="Center" />
+            </Frame>
+            <Frame VerticalOptions="FillAndExpand" Margin="20,20,20,20" CornerRadius="20" HasShadow="False">
+
+                <StackLayout VerticalOptions="Center" Spacing="20">
+
+                    <Image Source="Bracorcho.png"/>
+                    <Label Text="!! EL CONJUNTO LO " TextColor="Black" FontSize="25" FontAttributes="Bold" HorizontalOptions="Center" />
+                    <Label Text=" ARMAS TU !!" TextColor="Black" FontSize="25" FontAttributes="Bold" HorizontalOptions="Center" />
+                    <Button Text="Ir al inicio de sesion"
+                            TextTransform="None" Margin="0,50,0,0"
+                            BackgroundColor="#bd0003"
+                            CornerRadius="10"
+                            FontSize="Medium"
+                            FontAttributes="Bold"/>
+                    
+
+                </StackLayout>
+                
+            </Frame>
+                
+        </StackLayout>-->
+    </ScrollView>
+</ContentPage>
