@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="prueba1.Views.PruebasPag">
+    <ContentPage.Content>
+        <StackLayout x:Name="color">
+            <Button Text="Primera" x:Name="Alert1" Clicked="Alert1_Clicked"/>
+            <Button Text="Fabi" x:Name="Alert2" Clicked="Alert2_Clicked"/>
+            <Button Text="Fabiancho0" x:Name="Alert3" Clicked="Alert3_Clicked" />
+            <Button Text="Pasar a la cuarta" x:Name="CuartaPage" Clicked="CuartaPage_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

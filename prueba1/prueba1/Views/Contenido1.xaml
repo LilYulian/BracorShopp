@@ -186,6 +186,7 @@
                                     FontAttributes="Bold" 
                                     FontSize="Large"
                                     x:Name="BTnGuardado"
+                                    Clicked="BTnGuardado_Clicked"
                                     />
 
 
@@ -202,6 +203,15 @@
                                     FontSize="Large"
                                     x:Name="btnVolverInicio"
                                     Clicked="btnVolverInicio_Clicked"/>
+
+                            <Button Text="Tercera Page" 
+                                    CornerRadius="10"
+                                    FontAttributes="Bold"
+                                    FontSize="Large"
+                                    TextColor="AliceBlue"
+                                    BackgroundColor="Black"
+                                    x:Name="TrceraPage"
+                                    Clicked="TrceraPage_Clicked"/>
 
                         </StackLayout>
 
