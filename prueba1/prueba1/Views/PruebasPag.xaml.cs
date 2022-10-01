@@ -19,7 +19,7 @@ namespace prueba1.Views
 
         private void Alert1_Clicked(object sender, EventArgs e)
         {
-
+            
         }
 
         private async void Alert2_Clicked(object sender, EventArgs e)
@@ -56,7 +56,7 @@ namespace prueba1.Views
 
         private async void CuartaPage_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new webViews());
+            await Navigation.PushModalAsync(new webViews());
         }
     }
 }
